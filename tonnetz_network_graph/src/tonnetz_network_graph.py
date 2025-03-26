@@ -8,9 +8,10 @@ def create_db_graph(homology):
     """
     Create a 3D network graph of chord transitions based on note differences.
     Nodes are labeled with chord names, and colored based on chord type.
+    The homology level determines how many notes must be the same in the network graph to connect two nodes.
     """
 
-    # Initialize graph
+    # Initialise graph
     G = nx.Graph()
 
     # Define chord types with their respective names
